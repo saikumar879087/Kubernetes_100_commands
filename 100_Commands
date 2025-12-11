@@ -1,0 +1,38 @@
+• kubectl config get-contexts
+
+• kubectl config current-context
+
+• kubectl config use-context kubernetes-admin@kubernetes
+
+• kubectl version --short — Catch client/server version skew.
+
+• kubectl api-resources — Verify resource/CRD exists.
+
+• kubectl api-versions — See supported API versions (deprecations).
+
+• kubectl config get-contexts — Ensure you’re on the right cluster.
+
+• kubectl config current-context — Print active context.
+
+• kubectl config use-context <ctx> — Switch clusters quickly.
+
+• kubectl config view --minify -o jsonpath='{.contexts[0].context.namespace}' — Default namespace sanity check.
+
+• kubectl get --raw='/livez' — API liveness probe.
+
+• kubectl get --raw='/readyz?verbose' — API readiness with failing checks.
+
+• kubectl get ns — List namespaces (find your workload).
+
+• kubectl describe ns <ns> — Quotas/limitRanges blocking pods.
+
+• kubectl get resourcequota -n <ns> — “Exceeded quota” triage.
+
+• kubectl get limitrange -n <ns> — Default CPU/mem constraints.
+
+• kubectl get events -n <ns> --sort-by=.lastTimestamp | tail -n
+
+
+
+
+

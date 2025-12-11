@@ -1,0 +1,10 @@
+Switched to context "kubernetes-admin@kubernetes".
+controlplane:~$ kubectl config get-contexts
+CURRENT   NAME                          CLUSTER     AUTHINFO           NAMESPACE
+*         kubernetes-admin@kubernetes   kubernetes  kubernetes-admin
+
+controlplane:~$ kubectl config current-context
+kubernetes-admin@kubernetes
+
+controlplane:~$ kubectl config use-context kubernetes-admin@kubernetes
+Switched to context "kubernetes-admin@kubernetes".
